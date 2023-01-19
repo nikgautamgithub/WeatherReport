@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 6rem;
+    background: linear-gradient(24deg, rgba(2, 254, 217, 1) 0%, rgba(13, 248, 230, 1) 14%, rgba(18, 225, 245, 1) 22%, rgba(23, 127, 242, 1) 47%, rgba(26, 108, 236, 0.9668242296918768) 100%);
+    backdrop-filter: blur(5px);
+}
+
+
+.wrapper {
+    background-color: rgb(255, 255, 255, 0.5);
+    max-width: 90%;
+    border-radius: 3rem;
+    border: none;
+}
+
+
+/*           Today's Weather (Main Div)         */
+.todays-weather {
+    margin: 50px 40px;
+}
+
+/*              Input                */
+#input-city {
+    background-color: transparent;
+    border: transparent;
+    max-width: 50%;
+    text-align: center;
+}
+
+#error {
+    color: red !important;
+}
+
+/*           Today's Info (Main Div > text-center > ) */
+.todays-info {
+    /* color:rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+}
+
+#weather-icon {
+    width: 110px;
+}
+
+#other-details {
+    font-size: 20px;
+}
+
+/*       Weather Cards under chart    */
+#weather-cards {
+    margin: 40px;
+}
+
+#weather-cards>button {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+.active,
+#weather-cards>button:active {
+    color: aliceblue;
+    background-color: dodgerblue !important;
+}
+
+/*              Clock                */
+#clock {
+    background: transparent;
+    max-width: fit-content;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    border-color: transparent;
+}
+
+/*              Chart                */
+.chart {
+    margin: 50px 40px;
+    margin-left: 0;
+    /* height: 300px; */
+}
+
+#myChart {
+    max-height: 365px;
+}
+
+/*            Weather Cards          */
+#weather-cards>div>img {
+    width: 110px;
+}
+
+@media (max-width: 650px) {
+    body {
+        margin: 20px;
+        backdrop-filter: blur(50px);
+    }
+
+    .wrapper {
+        background-color: rgb(255, 255, 255, 0.7);
+        margin: 0;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .todays-weather {
+        margin-right: 40px;
+    }
+
+    #input-city {
+        border: 1px solid;
+        max-width: 100%;
+    }
+
+    #weather-icon {
+        width: 65px;
+    }
+
+    #other-details{
+        font-size: 1rem;
+    }
+
+    #clock{
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+
+    #weather-cards > button{
+        width: 100%;
+    }
+}
