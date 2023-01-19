@@ -103,8 +103,8 @@ const createChart = async () => {
           },
         },
         backgroundColor: "rgb(0,191,255,5%)",
-        titleFontColor: "rgb(0,191,255,60%)",
-        bodyFontColor: "rgb(0,0,0)",
+        titleFontColor: "dodgerblue",
+        bodyFontColor: "black",
       },
       elements: {
         point: {
@@ -181,7 +181,7 @@ const getWeather = async city => {
         let forecastDay = json.forecast.forecastday;
         let condition = json.current.condition;
 
-//         inputCity.value = city.charAt(0).toUpperCase() + city.slice(1);
+        // inputCity.value = json.location.name;
         todayDateTimeInfo.innerText = new Date().toLocaleDateString(undefined, dateOptions);
         regionLocation.innerText = `${json.location.name}, ${json.location.region}, ${json.location.country}`;
 
@@ -233,7 +233,11 @@ const getWeather = async city => {
 let toSearchCity = 'Julana';
 inputCity.onclick = () => inputCity.value = '';
 inputCity.addEventListener('keypress', e => {
-    if (e.which === 13) getWeather(inputCity.value);
+    if (e.which === 13){
+        getWeather(inputCity.value);
+        inputCity.value = '';
+        inputCity.blur(); //removes thee focus from input after pressing enter
+    }    
 });
 
 const active = (id) => {
