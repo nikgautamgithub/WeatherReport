@@ -181,7 +181,7 @@ const getWeather = async city => {
         let forecastDay = json.forecast.forecastday;
         let condition = json.current.condition;
 
-        inputCity.value = city.charAt(0).toUpperCase() + city.slice(1);
+//         inputCity.value = city.charAt(0).toUpperCase() + city.slice(1);
         todayDateTimeInfo.innerText = new Date().toLocaleDateString(undefined, dateOptions);
         regionLocation.innerText = `${json.location.name}, ${json.location.region}, ${json.location.country}`;
 
