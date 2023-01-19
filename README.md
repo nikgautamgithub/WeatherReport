@@ -1,2 +1,5 @@
 # Weather-Report
-A weather forecast app using WeatherAPI.com and ChartJS.
+A weather forecast webapp using HTML, CSS, Javascript and ChartJS.
+
+# API Used
+[WeatherAPI.com](https://www.weatherapi.com/)
