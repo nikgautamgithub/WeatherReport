@@ -1,5 +1,5 @@
 # Weather-Report
-A weather forecast webapp using HTML, CSS, Bootstrap, Javascript and ChartJS.
+A weather forecast webapp using HTML, CSS, Bootstrap, Javascript and [ChartJS](chartjs.org).
 
 ![alt text](https://github.com/nikgautamgithub/Weather-Report/blob/main/weather-report.jfif)
 ### API Used
